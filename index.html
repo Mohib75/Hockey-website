@@ -93,28 +93,32 @@
             <div class="carousel w-full min-h-[550px]">
                 <div id="slide1"
                     class="carousel-item relative w-full bg-[url(./Assets/Images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
-                    <div class="absolute flex gap-4 transform left-1/2 -translate-x-1/2  bottom-10 md:left-10">
+                    <div
+                        class="absolute flex gap-4 transform left-1/2 -translate-x-1/2  bottom-10 md:left-10 md:transform-none">
                         <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white text-xl">❯</a>
                     </div>
                 </div>
                 <div id="slide2"
                     class="carousel-item relative w-full bg-[url(./Assets/Images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
-                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                    <div
+                        class="absolute flex gap-4 transform left-1/2 -translate-x-1/2  bottom-10 md:left-10 md:transform-none">
                         <a href="#slide1" class="btn btn-circle bg-black text-white text-xl">❮</a>
                         <a href="#slide3" class="btn btn-circle bg-black text-white text-xl">❯</a>
                     </div>
                 </div>
                 <div id="slide3"
                     class="carousel-item relative w-full bg-[url(./Assets/Images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
-                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                    <div
+                        class="absolute flex gap-4 transform left-1/2 -translate-x-1/2  bottom-10 md:left-10 md:transform-none">
                         <a href="#slide2" class="btn btn-circle bg-black text-white text-xl">❮</a>
                         <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❯</a>
                     </div>
                 </div>
                 <div id="slide4"
                     class="carousel-item relative w-full bg-[url(./Assets/Images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
-                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                    <div
+                        class="absolute flex gap-4 transform left-1/2 -translate-x-1/2  bottom-10 md:left-10 md:transform-none">
                         <a href="#slide3" class="btn btn-circle bg-black text-white text-xl">❮</a>
                         <a href="#slide1" class="btn btn-circle bg-black text-white text-xl">❯</a>
                     </div>
@@ -231,6 +235,7 @@
             </div>
             <hr class="border-dashed h-[1px] bg-[#13131833] w-full">
 
+            <!-- card-grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 my-20">
                 <div class="card lg:card-side border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm p-6">
                     <figure><img src="./Assets/Images/5.png" alt="Album" /></figure>
@@ -302,6 +307,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card lg:card-side border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm p-6">
                     <figure><img src="./Assets/Images/7.png" alt="Album" /></figure>
                     <div class="card-body">
@@ -337,6 +343,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card lg:card-side border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm p-6">
                     <figure><img src="./Assets/Images/8.png" alt="Album" /></figure>
                     <div class="card-body">
@@ -372,6 +379,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card lg:card-side border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm p-6">
                     <figure><img src="./Assets/Images/9.png" alt="Album" /></figure>
                     <div class="card-body">
@@ -407,6 +415,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card lg:card-side border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm p-6">
                     <figure><img src="./Assets/Images/10.png" alt="Album" /></figure>
                     <div class="card-body">
@@ -438,6 +447,93 @@
                                 <img src="./Assets/Images/Cart.png" alt="">
                                 <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- client section -->
+        <section class="container mx-auto px-4 lg:px-0 my-20">
+            <hr class="border-dashed h-[1px] bg-[#13131833] w-full">
+            <div class="flex flex-col items-center justify-center text-center space-y-6 my-8">
+                <h2 class="text-4xl font-extrabold leading-normal text-black">Clients Question</h2>
+                <p class="text-[#13131899] max-w-[400px]">If you have some question then feel free to ask. Here are some
+                    faq for our sites.</p>
+            </div>
+            <hr class="border-dashed h-[1px] bg-[#13131833] w-full">
+
+            <div
+                class="flex flex-col lg:flex-row gap-4 border-[#1313181a] border-[1px] border-solid rounded-2xl shadow-sm items-center justify-center p-4 lg:p-8 my-20">
+                <img src="./Assets//Images/11.png" alt="Question">
+
+                <div class="flex flex-col">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">We have every equipment that is need for hockey. We give
+                                everybody
+                                free supplies of them.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">We give every bit of training needed for to be a great hockey
+                                player.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">We give some private lessons also some students who play better
+                                role
+                                in all the category sections.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">We also give lessons of some Ski touring.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">For booking u have to contact us with the mail we give in the
+                                end of
+                                the website.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold text-black">
+                            Pricings
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">The pricing of our subscription is not that much. You can easily
+                                buy
+                                it.</p>
                         </div>
                     </div>
                 </div>
