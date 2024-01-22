@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- adding custom font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'manrope': ['"Manrope"', "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white w-screen h-screen">
+    <header>
+        <!-- navbar -->
+        <div class="navbar font-manrope container mx-auto px-4 lg:px-0 pt-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#FF4240] text-white rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <h1 class="text-2xl lg:text-4xl text-black font-extrabold leading-normal">Hockey<span
+                        class="text-[#FF4240]">'</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#424247]">
+                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="flex items-center gap-8">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a
+                        class="btn bg-[#FF4240] text-white hover:bg-[#FF4240] hover:scale-110 transform transition-all duration-500 border-none">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- bannner section -->
+        <section class="container mx-auto px-4 lg:px-0 my-8 md:relative">
+            <div class="carousel w-full min-h-[550px]">
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-[url(./Assets/Images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
+                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white text-xl">❯</a>
+                    </div>
+                </div>
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-[url(./Assets/Images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
+                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white text-xl">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white text-xl">❯</a>
+                    </div>
+                </div>
+                <div id="slide3"
+                    class="carousel-item relative w-full bg-[url(./Assets/Images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
+                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white text-xl">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❯</a>
+                    </div>
+                </div>
+                <div id="slide4"
+                    class="carousel-item relative w-full bg-[url(./Assets/Images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl h-[60vh]">
+                    <div class="absolute flex gap-4 transform bottom-10 left-10">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white text-xl">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white text-xl">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-[500px] bg-black p-8 text-white rounded-2xl md:absolute md:bottom-10 md:right-10">
+                <h2 class="text-2xl mb-4">Meet all the heroes from the field</h2>
+                <p>Meet all our heroes from the field here who achieved many things in this field.</p>
+            </div>
+        </section>
+
+        <!-- professional club section -->
+        <section class="container mx-auto px-4 lg:px-0 my-8">
+            <div class="divider border-dashed"></div>
+        </section>
+    </main>
+</body>
+
+</html>
